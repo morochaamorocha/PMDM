@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.rals.ejer1bd.RecorridoCursor">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Primero"
+        android:id="@+id/btnPrimero"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="59dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=">"
+        android:id="@+id/btnSiguiente"
+        android:minWidth="50dp"
+        android:layout_alignTop="@+id/btnPrimero"
+        android:layout_toEndOf="@+id/btnPrimero" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="&lt;"
+        android:id="@+id/btnAnterior"
+        android:minWidth="50dp"
+        android:layout_alignTop="@+id/btnSiguiente"
+        android:layout_toStartOf="@+id/btnUltimo" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ultimo"
+        android:id="@+id/btnUltimo"
+        android:layout_alignTop="@+id/btnAnterior"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/lblNombre1"
+        android:layout_below="@+id/btnPrimero"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:textColor="#ff000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/lblApellido2"
+        android:layout_below="@+id/lblNombre1"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ff000000" />
+</RelativeLayout>
